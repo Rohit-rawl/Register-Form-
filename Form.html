@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+
+
+<H1 >REGISTER</H1>
+<!--
+<div style="text-align: center;">
+    to align your img to center wit the help of css
+
+</div>-->
+<image src = "photos/gandu.jpg" width = "200" ></image>
+<HR>
+    <form method = "post" action ="index.php">  
+
+    <label for = "username">username: </label>
+    <input type = "text" id = "username" minlength="6" placeholder="rawliet" ><br><br>
+
+    <label for="password">password:</label>
+    <input type="password" id = "password" minlength = "9" maxlength = "12" placeholder="Password@123"><br><br>
+
+    <label >title:</label>
+    <input  type = "radio" name = "title">Mr.
+    <input  type = "radio" name = "title">Mrs.
+    <input  type = "radio" name = "title">Dr.
+    <br><br>
+
+    First Name:   
+    <!--<label >First Name:</label>-->
+    <input placeholder="Rawliet">
+    <br><br>
+    Last Name:
+    <!--<label >First Name:</label>-->
+    <input placeholder="surname">
+    <br><br>
+    <label for="Email">E-mail:</label>
+    <input type="email" id = "email"  placeholder="demo@gmail.com"><br><br>
+
+    <label for="Phone number">Phone Number:</label>
+    <input type="phone number" id = "Phone number"  placeholder="+91-000-000-0000" pattern = [9]{1}[1]{1}[0-9]{3}[0-9]{3}[0-9]{4}><br><br>
+
+    <label for="birthday">Birth Date:</label>
+    <input type="date" id = "birthday"  placeholder="dd/mm/yyyy">><br><br>
+
+    <label>address:</label>
+    <textarea rows ="5" cols ="20" ></textarea><br><br>
+
+    <label for = "payment" > Payment:</label>
+    <select id = "payment" placeholder = "select option">
+        <option disabled>choose one</option>
+        <option>Debitcard/Creditcard</option>
+        <option>UPI</option>
+        <option>Giftcard</option>
+    </select><br><br>
+    
+    <input type = "checkbox">You have rechecked all the given info.<br><br>
+
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+
+<!--
+    <input type="reset"></textarea><br>
+    <input type="submit"></input><br>-->
+   
+    </form>
+</body>
+</html>
